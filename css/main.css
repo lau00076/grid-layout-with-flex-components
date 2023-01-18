@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+  }
+  
+.emojis {
+    display: grid;
+    grid-template-areas: 
+    "smile beer"
+    "TOJ seed";
+    gap: 1rem;
+}
+  
+  .emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+  }
+  
+  .emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: calc(100% - 2rem);
+    margin-top: auto;
+  }
+  
+  .icon {
+    font-size: 4rem;
+    order: -1;
+  }
+
+  .emoji:nth-child(1) {
+    grid-area: smile;
+  }
+  
+  .emoji:nth-child(2) {
+    grid-area: beer;
+  }
+
+  .emoji:nth-child(3) {
+    grid-area: TOJ;
+  }
+
+  .emoji:nth-child(4) {
+    grid-area: seed;
+  }
